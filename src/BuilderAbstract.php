@@ -21,7 +21,7 @@ abstract class BuilderAbstract
         $this->merchant_id = $merchant_id;
     }
 
-    public static abstract function getPreviousOrders($customerID);
+    public abstract function getPreviousOrders($customerID);
 
     public static function integerPrice($price)
     {
@@ -197,7 +197,7 @@ abstract class BuilderAbstract
         return false;
     }
 
-    public static abstract function platform();
+    public abstract function platform();
 
     protected static function notNull($value1)
     {
